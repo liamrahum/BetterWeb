@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="assets/styles/new-tab.css">
+    
+</head>
+<body id="body">
+    <!-- Old backgrounds:
+    <img src="assets/images/b1.svg" class="b1 unselectable"/>
+    <img src="assets/images/b3.svg" class="b3 unselectable"/>
+    <img src="assets/images/b2.svg" class="b2 unselectable"/>
+    <img src="assets/images/b4.svg" class="b4 unselectable"/>
+    <img src="assets/images/b5.svg" class="b5 unselectable"/>
+    -->
+<h1 id="welcome-msg" class="animated welcome-msg" style="animation-delay: 200ms;"></h1>
+<h2 class="secondary-header animated" style="animation-delay: 350ms;">What would you like to search today?</h2>
+<form action="https://duckduckgo.com/">
+<div class="search-form expanding" style="animation-delay: 500ms;">
+    <input class="search-input" placeholder="" aria-label="Search" type="search" name="q" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" autofocus="autofocus" required="required">
+    <img src="assets/images/search-icon.svg" alt="search-icon" class="search-icon">
+</div>
+</form>
+
+<div class="animated-reverse bible-verse" style="animation-delay: 600ms;">
+    <p id="verse"></p>
+    <a href="" style="text-decoration: none; color: white;" target="_blank" id="verse-name"></a>
+</div>
+</body>
+<script src="scripts/new-tab.js"></script>
+</html>
