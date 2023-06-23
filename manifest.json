@@ -1,11 +1,19 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "BetterWeb",
-    "version": "0.1.0",
+    "version": "0.1",
     "description": "Extension to block ungodly websites with a slick homepage",
+    "background": {
+    "scripts": ["scripts/dns-block.js"],
+    "persistent": true
+    },   
  
-    "permissions": ["tabs", "webRequest", "webNavigation", "activeTab"],
-    "host_permissions": ["https://*/*", "http://*/*"],
+      "permissions": [
+        "tabs", 
+        "webRequest", 
+        "webNavigation", 
+        "webRequestBlocking",
+        "activeTab"],
     "content_scripts": [{
         "js": ["scripts/content.js"],
         "matches": ["http://*/*", "https://*/*"]
